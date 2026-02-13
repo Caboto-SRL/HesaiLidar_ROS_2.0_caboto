@@ -17,7 +17,7 @@ lidar:
         recv_point_cloud_timeout: -1                  # The timeout of receiving point cloud
         ptc_connect_timeout: -1                       # The timeout of ptc connection
 
-        host_ip_address: ""
+        host_ip_address: 192.168.1.100
         fault_message_port: 0
 
         standby_mode: -1                              # The standby mode: [-1] is invalit [0] in operation [1] standby
@@ -80,7 +80,7 @@ lidar:
       ros_frame_id: hesai_lidar                       # Frame id of packet message and point cloud message
       ros_recv_packet_topic: /lidar_packets           # Topic used to receive lidar packets from rosbag
       ros_send_packet_topic: /lidar_packets           # Topic used to send lidar raw packets through ROS
-      ros_send_point_cloud_topic: /lidar_points       # Topic used to send point cloud through ROS
+      ros_send_point_cloud_topic: /scan_cloud         # Topic used to send point cloud through ROS
       ros_send_imu_topic: /lidar_imu                  # Topic used to send lidar imu message
       ros_send_packet_loss_topic: /lidar_packets_loss # Topic used to monitor packets loss condition through ROS
       # ros_recv_correction_topic: /lidar_corrections # Topic used to receive corrections file from rosbag
