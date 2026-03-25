@@ -1,3 +1,4 @@
 [submodule "src/driver/HesaiLidar_SDK_2.0"]
 	path = src/driver/HesaiLidar_SDK_2.0
 	url = git@github.com:Caboto-SRL/HesaiLidar_SDK_2.0_caboto.git
+	branch = tomove_jetson
