@@ -6,7 +6,7 @@ lidar:
     device_udp_src_port: 0
     distance_correction_flag: false
     echo_mode_filter: 0
-    enable_packet_loss_tool: true
+    enable_packet_loss_tool: false
     fov_end: -1
     fov_start: -1
     frame_frequency: 0
@@ -50,7 +50,7 @@ lidar:
       rs232_com: Your serial port name for sending cmd
       rs485_com: Your serial port name for receiving point cloud
     source_type: 1
-    thread_num: 5
+    thread_num: 4
     transform_flag: false
     use_gpu: true 
     use_timestamp_type: 0
@@ -66,6 +66,6 @@ lidar:
     ros_send_packet_loss_topic: /lidar_packets_loss
     ros_send_packet_topic: /lidar_packets
     ros_send_point_cloud_topic: /scan_cloud
-    send_imu_ros: true
+    send_imu_ros: false
     send_packet_ros: false
     send_point_cloud_ros: true
